@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Log Search API help page</h2>
+
+<table style="width:80%">
+  <tr>
+    <td>API route</td>
+    <td>Remark</td>
+  </tr>
+  <tr>
+    <td>POST {/getlogs} </td>
+    <td>To get the logs of a perticular date, Send a POST request to the API See the Example below</td>
+  </tr>
+  <tr>
+    <td>GET {/} </td>
+    <td>Returns 'Help' page </td>
+  </tr>
+</table>
+
+<p>Example :- curl -X POST -H “Content-Type: application/json” publicIP:8090/getlogs -F 'key=any key word'</p>
+
+</body>
+</html>
+

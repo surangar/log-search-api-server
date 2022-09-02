@@ -4,7 +4,7 @@ This script is capable to run as REST api server. This is designed to run inside
 
 You can search a specific entry in a log file with curl POST request as below.
 ```
- curl -X POST -H “Content-Type: application/json” IP_OF_HOSTED_SERVER/getlogs -F 'date=ANY_STRING_ON_A_LOG'
+ curl -X POST -H “Content-Type: application/json” IP_OF_HOSTED_SERVER/getlogs -F 'key=ANY_STRING_NEED_TO_SEARCH_ON_LOG'
 ```
 I've already published public docker image on docker hub as below.
 ```
@@ -27,7 +27,11 @@ sesirir/log-search-api:latest
 ```
 * Now you can search a log entry in Sample.log file with below command.
 ```
-curl -X POST -H “Content-Type: application/json” localhost/getlogs -F 'date=20220901_053307'
+curl -X POST -H “Content-Type: application/json” localhost/getlogs -F 'key=20220901_053307'
 ```
 
+Also you can access a help page for the API server as below which shows all the api routes.
 
+```
+http://PUBLIC_IP:8090
+```
