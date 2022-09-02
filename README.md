@@ -35,3 +35,4 @@ Also you can access a help page for the API server as below which shows all the 
 ```
 http://PUBLIC_IP:8090
 ```
+![Help Page](images/help_page.png)
